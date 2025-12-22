@@ -33,7 +33,7 @@ header h1 {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  background: rgba(0,0,0,0.4);
+  background: rgba(23, 13, 165, 0.342);
   padding: 6px 12px;
   border-radius: 6px;
   transition: 0.2s ease;
@@ -84,8 +84,8 @@ header h1 {
 /* Large Oval Lens */
 .preview {
   width: 1200px;          /* wider = oval */
-  height: 400px;         /* shorter = oval */
-  border-radius: 200px;  /* half of height = smooth oval */
+  height: 500px;         /* shorter = oval */
+  border-radius: 300px;  /* half of height = smooth oval */
   overflow: hidden;
   border: 2px solid #ccc;
   position: relative;
@@ -95,11 +95,11 @@ header h1 {
 /* Centered PDF inside the oval */
 .preview iframe {
   position: absolute;
-  width: 900px;         /* larger than container */
-  height: 900px;
+  width: 600px;         /* larger than container */
+  height: 200px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.75);
+  transform: translate(-50%, -50%) scale(0.99);
   transform-origin: center center;
   border: none;
 }
