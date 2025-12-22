@@ -1,0 +1,89 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header with PCB background */
+header {
+  background-image: url('pcb-background.jpg'); /* Add a PCB-style image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* Certificates Section */
+#certificates {
+  padding: 40px;
+  background: #fff;
+}
+
+#certificates h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cert-container {
+  display: flex;
+  gap: 20px;
+}
+
+.cert-list {
+  list-style: none;
+  padding: 0;
+  width: 200px;
+}
+
+.cert-list li {
+  margin: 10px 0;
+}
+
+.cert-list a {
+  text-decoration: none;
+  color: #0078d7;
+  font-weight: bold;
+}
+
+.cert-list a:hover {
+  color: #005a9e;
+}
+
+/* PDF Preview (like a lens) */
+.preview {
+  flex-grow: 1;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.preview iframe {
+  width: 800px;
+  height: 800px;
+  transform: scale(0.5);
+  transform-origin: top left;
+  border: none;
+}
+
+/* Resume Section */
+#resume {
+  padding: 40px;
+  background: #e9ecef;
+}
+
+#resume h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
