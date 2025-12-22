@@ -83,7 +83,7 @@ header h1 {
 /* PDF Preview (like a lens) */
 /* Large Oval Lens */
 .preview {
-  width: 700px;          /* wider = oval */
+  width: 1200px;          /* wider = oval */
   height: 400px;         /* shorter = oval */
   border-radius: 200px;  /* half of height = smooth oval */
   overflow: hidden;
@@ -95,11 +95,11 @@ header h1 {
 /* Centered PDF inside the oval */
 .preview iframe {
   position: absolute;
-  width: 1000px;         /* larger than container */
-  height: 1000px;
+  width: 900px;         /* larger than container */
+  height: 900px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.75);
   transform-origin: center center;
   border: none;
 }
