@@ -59,8 +59,8 @@ header h1 {
 
 /* PDF Preview (like a lens) */
 .preview {
-  width: 400px;
-  height: 400px;
+  width: 800px;
+  height: 800px;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid #ccc;
@@ -69,12 +69,12 @@ header h1 {
 
 .preview iframe {
   position: absolute;
-  width: 800px;
-  height: 800px;
+  width: 1600px;
+  height: 1600px;
   border: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.85);
+  top: 100%;
+  left: 100%;
+  transform: translate(-75%, -75%) scale(0.85);
   transform-origin: center center;
 }
 
@@ -89,3 +89,27 @@ header h1 {
   margin-bottom: 20px;
   text-align: center;
 }
+footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+.footer-links a {
+  color: #4da3ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: #82c4ff;
+}
+
+.footer-links .divider {
+  margin: 0 10px;
+  color: #555;
+}
+
