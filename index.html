@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+  </header>
+
+  <!-- Certificates Section -->
+  <section id="certificates">
+    <h2>My Certificates</h2>
+    <div class="cert-container">
+      <ul class="cert-list">
+        <li><a href="cert1.pdf" target="_blank">Certificate 1</a></li>
+        <li><a href="cert2.pdf" target="_blank">Certificate 2</a></li>
+        <li><a href="cert3.pdf" target="_blank">Certificate 3</a></li>
+      </ul>
+      <div class="preview">
+        <iframe id="pdf-preview" src="" frameborder="0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>My Resume</h2>
+    <iframe src="resume.pdf" width="100%" height="600px"></iframe>
+  </section>
+
+  <script>
+    // Hover preview logic
+    const links = document.querySelectorAll('.cert-list a');
+    const preview = document.getElementById('pdf-preview');
+
+    links.forEach(link => {
+      link.addEventListener('mouseover', () => {
+        preview.src = link.href;
+      });
+      link.addEventListener('mouseout', () => {
+        preview.src = "";
+      });
+    });
+  </script>
+</body>
+</html>
